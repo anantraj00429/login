@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <% if (typeof message !== 'undefined') { %>
+      <h1><%= message %></h1>
+    <% } %>
+
+    <div class="container">
+      <div class="row my-5">
+        
+          <h1 class="text-center login-title my-5">Employee Login Form</h1>
+          
+            <form action="/login" method="POST">
+              <input
+              type="text"
+              class="form-control"
+              placeholder="First Name *"
+              name="username"
+              value=""
+              required
+            />
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                required
+                name="password"
+              />
+              <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Log in
+              </button>
+              <label class="checkbox pull-left mt-3">
+                <input type="checkbox" value="remember-me" /> Remember me
+              </label>
+              <a href="#" class="pull-right need-help"
+                >Need help? <span class="clearfix"></span
+              ></a>
+            </form>
+          </div>
+          <a href="/registration" class="text-center new-account"
+            >Create an account</a
+          >
+       
+      </div>
+    </div>
+  </body>
+</html>

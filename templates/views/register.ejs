@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container register mb-5">
+        <h3>Welcome to the complete MERN Backend course</h3>
+        <input type="submit" name="" value="Login" />
+        </div>
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="/"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Registration</a>
+        
+              <h3 class="register-heading">Employee Registration Form</h3>
+              <form action="/register" method="POST">
+                <div class="row register-form">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name *"
+                        name="username"
+                        value=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email *"
+                        name="email"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        minlength="10"
+                        maxlength="10"
+                        class="form-control"
+                        placeholder="Your Phone *"
+                        name="phone"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Password *            "
+                        name="password"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                 
+                    <div class="form-group">
+                      <div class="maxl">
+                        <label class="radio inline">
+                          <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                            checked
+                          />
+                          <span> Male </span>
+                        </label>
+                        <label class="radio inline">
+                          <input type="radio" name="gender" value="female" />
+                          <span> Female </span>
+                        </label>
+                      </div>
+                     
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Confirm Password *"
+                          value=""
+                          name="confirmpassword"
+                        />
+                     
+                  </div>
+                  <input type="submit" class="btnRegister" value="Register" />
+                </div>
+              </form>
+            </div>
+        </body>
+        </html>

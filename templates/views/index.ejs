@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <div class="container">
+      <a class="navbar-brand text-white" style="color: rgb(179, 12, 54)"
+        >Technical</a
+      >
+      <% if(!currUser) { %>
+      <a style="color: rgb(227, 16, 16)" href="/register">
+        <h2>Registration</h2></a
+      >
+      <a style="color: rgb(234, 219, 15)" href="/login"><h2>Login</h2></a>
+      <% } else {%>
+      <a style="color: rgb(234, 219, 15)" href="/secret"><h2>Secret</h2></a>
+      <a style="color: rgb(164, 19, 111)" href="/logout"><h2>Logout</h2></a>
+      <% } %>
+    </div>
+  </body>
+</html>
